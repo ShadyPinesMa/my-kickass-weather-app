@@ -1,0 +1,17 @@
+body {
+  font-family: 'Zilla Slab', serif;
+  background: #e9f4ec;
+  margin: 0 auto;
+}
+span {
+  font-size: x-large;
+}
+h3 {
+  font-size: large;
+}
+
+.container{
+  background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+  border: 1px solid #7B6C53;
+  width: 700px;
+}
