@@ -2,7 +2,9 @@ body {
   font-family: 'Zilla Slab', serif;
   background: #e9f4ec;
   margin: 0 auto;
-  border-radius: 20px;
+  color: green;
+  text-align: center;
+  
 }
 span {
   font-size: x-large;
@@ -11,10 +13,22 @@ h3 {
   font-size: large;
 }
 
-.container{
+
+.card {
   background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
-  border: 1px solid #7B6C53;
-  width: 700px;
+  border: 3px solid #7B6C53;
+  width: 900px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.city-form {
+  text-align: center;
+  margin: 0 auto;
+}
+.city-search { 
+ 
+  display: inline-block;
 }
 p {
   text-align: center;
