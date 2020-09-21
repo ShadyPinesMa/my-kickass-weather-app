@@ -1,3 +1,19 @@
+//Date/time stuff
+let now = new Date ();
+
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let day = days[now.getDay()];
+let hours = now.getHours();
+let minutes = now.getMinutes();
+
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
+
+let currentDayTime = document.querySelector("#current-day-time");
+
+currentDayTime.innerHTML = `${day}, ${hours}:${minutes}`;
+
 //Here's the start of the search bar/submit stuff
 
 function showTemperature(response) {
