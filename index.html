@@ -16,43 +16,44 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <title>Weather App</title>
+    <title>Green Weather</title>
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <h1 class="city" id="city">City</h1>
-          <span class="day-time" id="current-day-time"></span>
-    
-          <h2 id="temp">  
-          </h2>
-
-          <h3>Tomorrow</h3>
-          <h3>Monday</h3>
-          <h3>Tuesday</h3>
-          <h3>Wednesday</h3>
-          <h3>Thursday</h3>
-        </div>
-        <div class="col-6">
-          <form id="search-form">
-            <input type="search" id="city-search" placeholder="Search" />
-            <button type="button" id="search-button" class="btn btn-secondary btn-sm">🔍</button>
-          <button type="button" id="current-location-button" class="btn btn-secondary btn-sm"><i class="fas fa-map-marker-alt"></i></button>
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+              <div class="city-form">
+                <form class="form-inline" id="search-form">
+              
+                <label for="search" class="sr-only">Search</label>
+                <input type="search" id="city-search" placeholder="Search" />
+              </div>
+            
+              <button type="button" id="search-button" class="btn btn-secondary btn-sm"><i class="fas fa-search" id="search"></i></button>
+              <button type="button" id="current-location-button" class="btn btn-secondary btn-sm"><i class="fas fa-map-marker-alt" id="location"></i></button>
           </form>
           
-
-          <h4>
-            Humidity 50% <br />
-            Wind: 5 mph
-          </h4>
-          <h3><i class="fas fa-cloud-rain"></i> 80°F Rain</h3>
-          <h3><i class="fas fa-cloud"></i> 81°F Cloudy</h3>
-          <h3><i class="fas fa-bolt"></i> 78°F Thunderstorms</h3>
-          <h3><i class="fas fa-cloud"></i> 76°F Cloudy</h3>
-          <h3><i class="fas fa-cloud"></i> 83°F Cloudy</h3>
+        </div> 
+      
+    </div>
+      <div class="row">
+        <div class="col-12">
+          <h1 class="city" id="city"><strong>City</strong></h1>
+          <span class="day-time" id="current-day-time"></span>
+          <h2 id="temp"></h2>
+        </div> 
+        
+      
+        
+     
+        
+      <div class="row"></div>
+          
         </div>
-      </div>
+        </div>
+      </div>  
     </div>
     <script src="script.js"></script>
     <p><a href="https://https://github.com/ShadyPinesMa/super-duper-weather-app">Open-source code</a> by Carla Cipolloni</p>
